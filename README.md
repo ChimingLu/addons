@@ -23,6 +23,25 @@ Add-ons are features you can switch on or off in the [CadCraft](https://getcadcr
 
 `tools/` is the same in the template and in each code example (the layout example has its own, smaller tools).
 
+## BimCraft visual-script add-on (fit check)
+
+The BimCraft visual scripting add-on is a good **reference example**, but not a drop-in package for this repo's template:
+
+- Source: `bimcraft/app/addons/visual-script/` in the BimCraft repo.
+- Manifest/API: it targets BimCraft add-on API `1.1` with permissions `draw` and `model`.
+- Scope: it depends on BimCraft model-edit APIs (`api.draw`, `api.model`) and node-graph behavior that CadCraft 1.0-only
+  examples here do not expose.
+
+So it is "suitable" to include as a documented example and design reference, but it should stay maintained in the
+BimCraft repo where those APIs live.
+
+## How this repo relates to the other CadCraft repos
+
+- `bimcraft`: ships app-owned add-ons used by BimCraft itself (including `visual-script`).
+- `studio`: packs browser editions from app repos into one suite folder for CadCraft Studio.
+- `desktop-shell`: wraps one app edition (or a Studio suite) as desktop installers.
+- `language-packs`: translation layers consumed by apps, Studio and add-ons.
+
 ## Start
 
 ```sh

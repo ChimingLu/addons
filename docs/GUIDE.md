@@ -38,6 +38,10 @@ Say `network` if your code talks to any server; review checks where to.
 
 ## The API
 
+> Note on the BimCraft visual-script add-on: it is maintained in `bimcraft/app/addons/visual-script/` and targets
+> BimCraft API 1.1 (`draw`, `model`). Use it as a design reference for graph-driven workflows, but adapt API calls when
+> building against the CadCraft 1.0 template/examples in this repo.
+
 ### Every app
 
 | Call | |
